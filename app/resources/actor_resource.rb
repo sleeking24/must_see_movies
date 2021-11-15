@@ -9,8 +9,7 @@ class ActorResource < ApplicationResource
 
   # Direct associations
 
-  has_many   :roles
+  has_many :roles
 
   # Indirect associations
-
 end

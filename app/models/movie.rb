@@ -2,13 +2,13 @@ class Movie < ApplicationRecord
   # Direct associations
 
   has_many   :bookmarks,
-             :dependent => :destroy
+             dependent: :destroy
 
   has_many   :roles,
-             :dependent => :destroy
+             dependent: :destroy
 
   has_many   :reviews,
-             :dependent => :destroy
+             dependent: :destroy
 
   belongs_to :director
 
@@ -21,5 +21,4 @@ class Movie < ApplicationRecord
   def to_s
     title
   end
-
 end
